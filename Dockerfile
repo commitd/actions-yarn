@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:alpine3.10
 
 RUN apk add --no-cache git python2 build-base wget ca-certificates
 RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
